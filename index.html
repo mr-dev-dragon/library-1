@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>www.librery.com/vip/interfice</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <section class="s1">
+            <article class="a1">
+                <form id="form">
+                     <div>
+                         <input  style="text-transform: capitalize;"  required   minlength="4" maxlength="30" type="text" id="title" name="title" placeholder=" the book title..."required />
+                     </div>
+                         <input style="text-transform: capitalize;" required   minlength="4" maxlength="15" type="text" id="Writer" name="Writer" placeholder=" the Writer of the book..." required />
+                    <div class="init">     
+                    <div class="choices" required >
+                        <input type='radio' id='Novil' value='Novil' name='fav'>
+                        <label for='Novil'>Novil</label>
+                        <input type='radio' id='Essay' value='Essay' name='fav' checked>
+                        <label for='essai'>Essay</label>
+                        <input type='radio' id='Comidy' value='Comidy' name='fav'>
+                        <label for='Comidy'>Comidy</label>
+                    </div>
+                    </div>
+                    <div>
+                         <select  id="Langouge" name="Langouge" required>
+                             <option required id="English" value="English" >English</option>
+                             <option required id="Franch" value="Franch" >Franch</option>
+                             <option required id="Arabic" value="Arabic">Arabic</option>
+                         </select>
+                    </div>
+                </form>
+            </article>
+            <article class="a2">
+                <form  id="form">
+                    <div>
+                         <input  name="date"  id="date"   type="date"     required   />
+                    </div><div class="file" >
+                         <input  required   name="file"  id="file"   type="file" class="inputfile"  data-multiple-caption="{count} files selected" multiple />
+                        </div><div>
+                         <input     name="url"   id="url"    type="url"     placeholder='www.linke.com'   minlength="15" required  pattern="https://"/>
+                   </div><div>
+                         <input required  name="price" id="price"  type="number"   placeholder='Price' />
+                    </div>
+                </form>
+            </article>
+      </section>
+      <section id="s2" class="s2">
+        <button form="form" id="save-btn" type="submit" value="submit" name="save-btn"> save </button>
+        <button form="form" id="btn" type="submit" value="submit" name="btn"> Add </button>
+      </section>
+      <section class="s3">
+            <table>
+                <thead>
+                     <tr>
+                        <th>tatle</th>
+                        <th>outher</th>
+                        <th>type</th>
+                        <th>langouge</th>
+                        <th>date</th>
+                        <th>img</th>
+                        <th>link</th>
+                        <th>price</th>
+                        <th></th>
+                    </tr>
+                </thead >
+                <tbody id="addrow">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="pro.js"></script>
+</body>
+
+</html>
