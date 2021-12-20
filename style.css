@@ -87,9 +87,13 @@ main{
 }
 .a1 > form:hover{
 border: 2px #00E8CC solid ;
+      height: 372px;
+    width: 564px;
 }
 .a2 > form:hover{
 border: 2px #00E8CC solid ;
+    height: 372px;
+    width: 564px;
 } 
 input{
 height: 46px;
